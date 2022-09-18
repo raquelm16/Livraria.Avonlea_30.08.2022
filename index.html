@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Avonlea</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="bootstrap-5.2.0/css/bootstrap.min.css"><!--linkando css do bootstrap,assim é só copiar e colar o html/ ctrl + espaço = lista-->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+<body>
+    <header>
+        <h1>LIVRARIA AVONLEA</h1>
+    </header>
+<br>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Página Inicial</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./avaliação.html">Avaliação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contato
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">E-mail</a></li>
+                  <li><a class="dropdown-item" href="#">Telefone</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Denúncia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar" name="search" onkeyup="search_cards()">
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+
+      <!--GRID 01- o boot divide em 12 colunas-->
+      <div class="row" id="cards">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+        <img src="./img/anne1.jpg" class="card-img-top" alt="Livro 01">
+        <div class="card-body">
+          <h5 class="card-title">Anne de Green Gables</h5>
+          <p class="card-text">Animada, Anne Shirley chega à Ilha do Príncipe Eduardo, onde será adotada por Marilla e Matthew Cuthbert. A jovem, então, encara o desafio de ajudar no dia a dia daquela família, de modo que os dias se passam repletos de aprendizados para a órfã e o casal de irmãos. Será Anne, com sua imaginação fértil e peculiar forma de encarar a vida, capaz de conquistar seu lugar em Avonlea?</p>
+          <a href="" class="btn btn1" id="livro1" onclick="adicionarCarrinho">Adicionar ao Carrinho</a>
+        </div>
+      </div>
+        </div>
+        
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+        <img src="./img/anne2.jpg" class="card-img-top" alt="Livro 02">
+        <div class="card-body">
+          <h5 class="card-title">Anne de Avonlea</h5>
+          <p class="card-text">Após desistir de cursar a faculdade para ficar em Green Gables, está prestes a iniciar suas atividades como a professora da escola de Avonlea. Guiada por seus ideais românticos, planeja atuar com métodos de ensino inovadores, mas, com o tempo, acaba percebendo que muitas vezes a teoria é bem diferente da prática.</p>
+          <a href="" class="btn btn2">Adicionar ao Carrinho</a>
+        </div>
+         </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+        <img src="./img/anne3.jpg" class="card-img-top" alt="Livro 03">
+        <div class="card-body">
+          <h5 class="card-title">Anne da Ilha</h5>
+          <p class="card-text">Aos dezoito anos de idade, Anne Shirley está pronta para a faculdade. Lá, Anne não só avança em seus estudos, mas também faz novos amigos e se diverte com sua atual e movimentada vida social. </p>
+          <a href="" class="btn btn3">Adicionar ao Carrinho</a>
+        </div>
+      </div>
+        </div>
+        
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+        <img src="./img/anne4.jpg" class="card-img-top" alt="Livro 04">
+        <div class="card-body">
+          <h5 class="card-title">Anne de Windy Poplars</h5>
+          <p class="card-text">Anne Shirley está comprometida com Gilbert Blythe, mas terá de enfrentar três anos de distância até que o noivo se forme no curso de medicina em Redmon e retorne a Avonlea. Enquanto isso, a ruiva aceita o cargo de diretora no Colégio de Summerside, o que a faz se mudar para Windy Poplars.</p>
+          <a href="" class="btn btn4">Adicionar ao Carrinho</a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+      <img src="./img/anne5.jpg" class="card-img-top" alt="Livro 05">
+      <div class="card-body">
+        <h5 class="card-title">Anne e a Casa dos Sonhos</h5>
+        <p class="card-text">Após um lindo casamento no pomar de green gables, o casal apaixonado se muda para four winds point, onde gilbert consegue um trabalho como médico. Em sua nova rotina cuidando do lar, a ruiva conhece muitas pessoas interessantes e, como já era de se esperar, reúne admiradores de sua personalidade carismática. </p>
+        <a href="" class="btn btn5">Adicionar ao Carrinho</a>
+      </div>
+    </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+    <img src="./img/anne6.jpg" class="card-img-top" alt="Livro 06">
+    <div class="card-body">
+      <h5 class="card-title">Anne de Ingleside</h5>
+      <p class="card-text">O livro traz Anne Shirley como uma atarefada mãe de cinco filhos, sem um momento de tédio sequer em sua animada casa. E, com um bebê a caminho e a visita da insuportável tia Mary Maria, desgastando-a, a vida de Anne está prestes a explodir.</p>
+      <a href="" class="btn btn6">Adicionar ao Carrinho</a>
+    </div>
+  </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="./img/anne7.jpg" class="card-img-top" alt="Livro 07">
+  <div class="card-body">
+    <h5 class="card-title">Vale do Arco-Íris</h5>
+    <p class="card-text">Contrariando as expectativas uma amizade nasce entre as crianças, enquanto o viúvo John Meredith procura por uma esposa. Em um celeiro, está escondida a órfã Mary Vance, que conquista os pequenos Blythe e Meredith, que juntos no Vale do Arco-Íris, traçam um plano para que a nova amiga não volte ao orfanato.</p>
+    <a href="" class="btn btn7">Adicionar ao Carrinho</a>
+  </div>
+</div>
+  </div>
+
+  <div class="col" id="rilaDeIngleside">
+    <div class="card" style="width: 18rem;">
+<img src="./img/anne8.jpg" class="card-img-top" alt="Livro 07">
+<div class="card-body">
+  <h5 class="card-title">Rila de Ingleside</h5>
+  <p class="card-text">Anne e Gilbert se preocupam com os seus filhos e com a ingenuidade da pequena Rilla, que terá sua coragem e amadurecimento testados por episódios que a mudarão para sempre.</p>
+  <a href="" class="btn btn8">Adicionar ao Carrinho</a>
+</div>
+</div>
+</div>
+   </div>
+
+<footer>
+  <ul>Raquel Moreira, 2A <br>Senai, 2022</ul>
+</footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap-5.2.0/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
