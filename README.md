@@ -1,0 +1,1 @@
+# Livraria.Avonlea_30.08.2022
